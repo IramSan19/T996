@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Test</title>
+  <!-- Splide CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .splide__slide {
+      height: 100vh;
+      /* Asegura que cada slide ocupe toda la altura de la pantalla */
+      overflow-y: auto;
+      /* Permite scroll si hay mucho contenido */
+    }
+
+    /* Para Webkit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+      width: 20px;
+      margin-right: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #fff;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ccc;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-800 text-white w-full h-full">
+
+  <div class="splide w-full h-full px-10">
+    <div class="splide__track border rounded-3xl">
+      <ul class="splide__list">
+        <li class="splide__slide h-full w-full flex justify-center items-center">
+          <h1 class="text-9xl font-bold tracking-widest text-center">Sensores</h1>
+        </li>
+        <li class="splide__slide w-full h-full flex justify-center items-center">
+          <div class="p-4">
+            <div class="container mx-auto">
+              <div class="px-10 pt-10">
+                <h5 class="text-5xl font-bold tracking-widest mb-28">Sensores Ópticos</h5>
+                <div class="flex justify-around items-center gap-10 text-lg">
+                  <div class="text-justify tracking-wider">
+                    <p class="font-bold my-3 text-xl tracking-widest">Tipos</p>
+                    <p class="max-w-[600px]">
+                    <ul class="list-disc pl-5">
+                      <li>Fotodiodos</li>
+                      <li>Fototransistores</li>
+                      <li>Sensores de fibra óptica</li>
+                      <li>Sensores láser</li>
+                    </ul>
+                    </p>
+                    <p class="font-bold my-3 text-xl tracking-widest">Funcionamiento</p>
+                    <p class="max-w-[600px]">Detectan la luz o cambios en su intensidad para identificar objetos o medir distancias.</p>
+                    <p class="font-bold my-3 text-xl tracking-widest">Caracteristicas</p>
+                    <p class="max-w-[600px]">Alta velocidad de respuesta y precisión, inmunes a interferencias electromagnéticas.</p>
+                    <p class="font-bold my-3 text-xl tracking-widest">Modo de comunicación</p>
+                    <p class="max-w-[600px]">Usan señales digitales o analógicas para transmitir datos, a menudo a través de interfaces como RS-485 o protocolos industriales.</p>
+
+                  </div>
+                  <div class="flex gap-5 flex-wrap max-w-[500px]">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://teknomovo.com.mx/wp-content/uploads/2021/08/vbpw21.jpg" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXkzNy0Z43SbueeWK6us0PT1CyUA5mOgJzA&s" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://www.keyence.com.mx/Images/sensorbasics_fiber_feature_img_04_1547891.jpg" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://www.keyence.com.mx/Images/sensorbasics_laser_light_info_img_01_1547900.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide w-full h-full flex justify-center items-center">
+          <div class="p-4">
+            <div class="container mx-auto">
+              <div class="px-10 pt-10">
+                <h5 class="text-5xl font-bold tracking-widest mb-28">Sensores de Temperatura</h5>
+                <div class="flex justify-around items-center gap-10">
+                  <div class="text-justify tracking-wider">
+                    <div class="text-justify tracking-wider">
+                      <p class="font-bold my-3 text-xl tracking-widest">Tipos</p>
+                      <p class="max-w-[600px]">
+                      <ul class="list-disc pl-5">
+                        <li>Termopares</li>
+                        <li>RTD (Detectores de temperatura por resistencia)</li>
+                        <li>pirómetros (sin contacto)</li>
+                      </ul>
+                      </p>
+                      <p class="font-bold my-3 text-xl tracking-widest">Funcionamiento</p>
+                      <p class="max-w-[600px]">Miden la temperatura basándose en cambios en la resistencia eléctrica o radiación térmica.</p>
+                      <p class="font-bold my-3 text-xl tracking-widest">Caracteristicas</p>
+                      <p class="max-w-[600px]">Varían en precisión y rango de operación. Los termopares son rápidos, mientras que los RTD ofrecen mayor precisión.</p>
+                      <p class="font-bold my-3 text-xl tracking-widest">Modo de comunicación</p>
+                      <p class="max-w-[600px]">Señales de voltaje o resistencia, y se pueden integrar a sistemas mediante controladores PLC o interfaces USB</p>
+
+                    </div>
+                  </div>
+                  <div class="flex gap-5 flex-wrap max-w-[500px]">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://hosteleriauno.es/blog/wp-content/uploads/2022/07/termopar-que-es-scaled.jpg" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/f2b03e4f-6559-417d-80ab-411ca2cf295a.8c507a5b7703076e89cd5087b1aba23f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://img.directindustry.es/images_di/photo-m2/37414-14513155.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="splide__slide w-full h-full flex justify-center items-center">
+          <div class="p-4">
+            <div class="container mx-auto">
+              <div class="px-10 pt-10">
+                <h5 class="text-5xl font-bold tracking-widest mb-28">Sensores de Presión</h5>
+                <div class="flex justify-around items-center gap-10">
+                  <div class="text-justify tracking-wider">
+                    <div class="text-justify tracking-wider">
+                      <p class="font-bold my-3 text-xl tracking-widest">Tipos</p>
+                      <p class="max-w-[600px]">
+                      <ul class="list-disc pl-5">
+                        <li>Sensores piezoeléctricos</li>
+                        <li>Sensores capacitivos</li>
+                        <li>Sensores de resonancia</li>
+                      </ul>
+                      </p>
+                      <p class="font-bold my-3 text-xl tracking-widest">Funcionamiento</p>
+                      <p class="max-w-[600px]">Miden la presión de gases o líquidos convirtiendo esa presión en una señal eléctrica proporcional.</p>
+                      <p class="font-bold my-3 text-xl tracking-widest">Caracteristicas</p>
+                      <p class="max-w-[600px]">Alta precisión, pueden medir desde presiones bajas hasta muy altas, dependiendo del tipo.</p>
+                      <p class="font-bold my-3 text-xl tracking-widest">Modo de comunicación</p>
+                      <p class="max-w-[600px]">Salidas análogas (voltaje o corriente) o digitales a través de interfaces como I2C o SPI</p>
+
+                    </div>
+                  </div>
+                  <div class="flex gap-5 flex-wrap max-w-[500px]">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://www.hbm.com/fileadmin/mediapool/images/products/sensors/force/for-clp-family-teaser.png" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/875L-M16NP30-D4-1.1920.jpg" alt="">
+                    <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://pronapresa.com/cdn/shop/products/sensor-para-analizador-cuantico-de-resonancia-magnetica-repuesto-herramientas-de-diagnostico-y-salud-tienda-naturista-pronapresa-1.jpg?v=1684429486&width=800" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="splide__slide w-full h-full flex justify-center items-center">
+          <div class="p-4"></div>
+          <div class="container mx-auto">
+            <div class="px-10 pt-10">
+              <h5 class="text-5xl font-bold tracking-widest mb-28">Sensores de Proximidad</h5>
+              <div class="flex justify-around items-center gap-10">
+                <div class="text-justify tracking-wider">
+                  <div class="text-justify tracking-wider">
+                    <p class="font-bold my-3 text-xl tracking-widest">Tipos</p>
+                    <p class="max-w-[600px]">
+                    <ul class="list-disc pl-5">
+                      <li>Inductivos</li>
+                      <li>Capacitivos</li>
+                      <li>Ultrasónicos</li>
+                      <li>Ópticos</li>
+                    </ul>
+                    </p>
+                    <p class="font-bold my-3 text-xl tracking-widest">Funcionamiento</p>
+                    <p class="max-w-[600px]">Detectan la presencia de objetos cercanos sin contacto físico, usando principios de campo magnético o sonido.</p>
+                    <p class="font-bold my-3 text-xl tracking-widest">Caracteristicas</p>
+                    <p class="max-w-[600px]">Alta durabilidad en entornos industriales, insensibles al polvo o humedad, con buena precisión.</p>
+                    <p class="font-bold my-3 text-xl tracking-widest">Modo de comunicación</p>
+                    <p class="max-w-[600px]">Salidas de tipo digital o análoga. En algunos casos, comunican a través de redes industriales como Profibus o Modbus</p>
+
+                  </div>
+                </div>
+                <div class="flex gap-5 flex-wrap max-w-[500px]">
+                  <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://www.schmersal-latam.com/fileadmin/download/global/br/produtos/sensor_ifl_n_18.jpg" alt="">
+                  <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/875L-M16NP30-D4-1.1920.jpg" alt="">
+                  <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://www.330ohms.com/cdn/shop/products/photo_A_OS-03261_SensorUltrasonico_HC-SR04_01_1200x1200.png?v=1598042103" alt="">
+                  <img class="w-[200px] h-[200px] rounded-3xl shadow-lg bg-slate-700 object-cover" src="https://aelectronics.com.mx/metepec/60-thickbox_default/sensor-de-presencia-optico.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+    </li>
+    </ul>
+  </div>
+  </div>
+
+  <!-- Splide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script>
+    var splide = new Splide('.splide', {
+      direction: 'ttb', // Carrusel vertical
+      height: '100vh', // Altura completa de la pantalla
+      wheel: true, // Permite hacer scroll con la rueda del ratón
+    });
+
+    splide.mount();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
